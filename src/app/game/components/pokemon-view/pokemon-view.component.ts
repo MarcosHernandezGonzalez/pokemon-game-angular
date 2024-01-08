@@ -9,6 +9,11 @@ import { Component, Input, OnInit } from '@angular/core';
       /* width: 275px;
       height: 200px; */
     }`,
+    `hover {
+      filter: brightness(0);
+      width: 100px;
+      height: 100px;
+    }`,
     `.cover { object-fit: cover; }`,
     `.show { filter: brightness(1); }`
   ]

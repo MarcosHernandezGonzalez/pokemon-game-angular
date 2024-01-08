@@ -11,5 +11,14 @@ export class IsessioHernandezComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  // @ts-ignore
+  nom = ''
+  setNom(){
+    // @ts-ignore
+    this.nom = (document.getElementById('nom') as HTMLInputElement).value;
+    // @ts-ignore
+    localStorage.setItem('nom', this.nom);
+    // @ts-ignore
+    console.log(this.nom)
+  }
 }

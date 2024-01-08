@@ -11,5 +11,9 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  nom: string | null = null;
+  setNom(){
+    // @ts-ignore
+    this.nom = document.getElementById("text").innerText
+  }
 }
