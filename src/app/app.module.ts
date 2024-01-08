@@ -9,13 +9,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
+import { IsessioHernandezComponent } from './isessiohernandez/isessio-hernandez.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    IsessioHernandezComponent
   ],
   imports: [
     BrowserModule,
