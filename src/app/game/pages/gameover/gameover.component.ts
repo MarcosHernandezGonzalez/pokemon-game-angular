@@ -21,6 +21,7 @@ export class GameoverComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.playerService.addScore();
   }
 
 }

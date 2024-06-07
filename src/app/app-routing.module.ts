@@ -19,6 +19,10 @@ const routes: Routes = [
   },
   {
     path: '**',
+    component: HomeComponent
+  },
+  {
+    path: 'isessio',
     component: IsessioHernandezComponent
   }
 ];

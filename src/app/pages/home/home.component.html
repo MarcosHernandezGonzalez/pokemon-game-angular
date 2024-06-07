@@ -7,7 +7,9 @@
      <div fxLayout="row"
           fxLayout.xs="column"
           fxLayoutAlign="center center"
-          fxLayoutGap="30px">
+          fxLayoutGap="30px"
+          *ngIf="!mostrar">
+
         <!-- <button mat-stroked-button
                 color="primary"
                 routerLink="/information">
@@ -16,15 +18,17 @@
 
         <button mat-raised-button
                 color="primary"
-                routerLink="/game"
+                (click)="mostrarisesio()"
                 class="breath">
             PLAY
         </button>
-
         <button mat-stroked-button
                 color="primary"
                 routerLink="/information/scores">
             SCORES
         </button>
-     </div>
+</div>
+  <div *ngIf="mostrar">
+    <app-isessio-hernandez></app-isessio-hernandez>
+  </div>
 </div>

@@ -26,9 +26,12 @@ export class PokemonViewComponent implements OnInit {
   @Input() height: number = 0;
   @Input() adjust: boolean = false;
 
+  isDblClicked = false;
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
 
 }

@@ -56,7 +56,7 @@ export class GameComponent implements OnInit {
     this.playerService.resetGame();
     this.newGame();
     this.storedNom = localStorage.getItem('nom');
-
+    this.playerService.setPunts();
   }
 
   onSelect(pokemonName: string) {

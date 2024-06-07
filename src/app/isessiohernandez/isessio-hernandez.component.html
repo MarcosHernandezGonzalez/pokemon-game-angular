@@ -1,10 +1,12 @@
 <div id="content">
-  <p>JUGADOR:</p>
-  <input id="text" type="text" (change)="setNom()">
-  <button
+  <p> JUGADOR: </p>
+  <input id="nom" type="text" >
+  <p> PUNTS: </p>
+  <input id="punts" type="text" >
+  <button (click)="setNom()"
           mat-raised-button
           color="primary"
-          routerLink="/home"
+          routerLink="/game"
           class="breath">
     JUGAR
   </button>
